@@ -91,8 +91,8 @@ LoginButton.MouseButton1Down:Connect(function()
 		LoginFrame.Visible = false
 		MainHaxGui.Visible = true
 		if not Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
-			local player = game.Players.LocalPlayer
-			player:Kick("Wrong Password")
+			print("not granted")
+
 		end
 	end
 end)
@@ -119,6 +119,15 @@ SazaHub.TextSize = 14.000
 SazaHub.TextWrapped = true
 SazaHub.MouseButton1Down:Connect(function()
 	print("The Script Not Working Patched")
+while true do
+
+wait()
+
+local part = Instance.new("Part")
+part.Name = "try part"
+part.brickcolor = brickcolor.new("Red")
+part.Parent = game.Workspace
+end
 end)
 
 BlackTrap.Name = "BlackTrap"
@@ -201,7 +210,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.834586442, 0, 0.886554599, 0)
 TextLabel.Size = UDim2.new(0, 66, 0, 27)
-TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "SadReD"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
@@ -214,9 +223,9 @@ Reflex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Reflex.BackgroundTransparency = 1.000
 Reflex.Position = UDim2.new(0, 0, 0.886554599, 0)
 Reflex.Size = UDim2.new(0, 66, 0, 27)
-Reflex.Font = Enum.Font.SourceSans
+Reflex.Font = Enum.Font.SourceSansBold
 Reflex.Text = "Reflex"
-Reflex.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reflex.TextColor3 = Color3.fromRGB(20, 20, 20)
 Reflex.TextScaled = true
 Reflex.TextSize = 14.000
 Reflex.TextWrapped = true
