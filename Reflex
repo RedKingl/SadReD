@@ -1,6 +1,7 @@
--- Made By:SadReD/Noobie
+-- Made By:SadReD/Reflex
 
-
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
 local MainGui = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
 local Bar1 = Instance.new("Frame")
@@ -12,7 +13,11 @@ local MainHaxGui = Instance.new("Frame")
 local SazaHub = Instance.new("TextButton")
 local BlackTrap = Instance.new("TextButton")
 local Closed = Instance.new("TextButton")
-
+local FeTP = Instance.new("TextButton")
+local FEKill = Instance.new("TextButton")
+local Admin = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Reflex = Instance.new("TextLabel")
 
 
 MainGui.Name = "MainGui"
@@ -87,6 +92,9 @@ LoginButton.MouseButton1Down:Connect(function()
 	if Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
 		LoginFrame.Visible = false
 		MainHaxGui.Visible = true
+		if not Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
+			localPlayer:Kick("Wrong Username Or Password Join In Discord Server To Get User and Password")			
+		end
 	end
 end)
 
@@ -101,25 +109,25 @@ MainHaxGui.Draggable = true
 
 SazaHub.Name = "SazaHub"
 SazaHub.Parent = MainHaxGui
-SazaHub.BackgroundColor3 = Color3.fromRGB(0, 0, 163)
+SazaHub.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
 SazaHub.Position = UDim2.new(0.0375939831, 0, 0.163865551, 0)
 SazaHub.Size = UDim2.new(0, 99, 0, 50)
-SazaHub.Font = Enum.Font.SourceSans
+SazaHub.Font = Enum.Font.SourceSansBold
 SazaHub.Text = "SazaHub"
 SazaHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 SazaHub.TextScaled = true
 SazaHub.TextSize = 14.000
 SazaHub.TextWrapped = true
 SazaHub.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet"https://www.scriptbloxian.com/raw/SAZA-HUB_496")()
+	print("The Script Not Working Patched")
 end)
 
 BlackTrap.Name = "BlackTrap"
 BlackTrap.Parent = MainHaxGui
-BlackTrap.BackgroundColor3 = Color3.fromRGB(0, 0, 163)
+BlackTrap.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
 BlackTrap.Position = UDim2.new(0.403508782, 0, 0.163865551, 0)
 BlackTrap.Size = UDim2.new(0, 99, 0, 50)
-BlackTrap.Font = Enum.Font.SourceSans
+BlackTrap.Font = Enum.Font.SourceSansBold
 BlackTrap.Text = "BlackTrap"
 BlackTrap.TextColor3 = Color3.fromRGB(0, 0, 0)
 BlackTrap.TextScaled = true
@@ -127,14 +135,13 @@ BlackTrap.TextSize = 14.000
 BlackTrap.TextWrapped = true
 BlackTrap.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
-	game:GetObjects("rbxassetid://175460237")[1].Parent = game.Players.LocalPlayer.PlayerGui
 end)
 
 Closed.Name = "Closed"
 Closed.Parent = MainHaxGui
 Closed.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-Closed.Position = UDim2.new(0.862155378, 0, 0, 0)
-Closed.Size = UDim2.new(0, 55, 0, 50)
+Closed.Position = UDim2.new(0.887218058, 0, 0, 0)
+Closed.Size = UDim2.new(0, 45, 0, 32)
 Closed.Font = Enum.Font.SourceSans
 Closed.Text = "X"
 Closed.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -142,5 +149,75 @@ Closed.TextScaled = true
 Closed.TextSize = 14.000
 Closed.TextWrapped = true
 Closed.MouseButton1Down:Connect(function()
-	Closed.Visible = false
+	MainHaxGui.Visible = false
 end)
+
+FeTP.Name = "Fe TP"
+FeTP.Parent = MainHaxGui
+FeTP.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+FeTP.Position = UDim2.new(0.0225563906, 0, 0.449579835, 0)
+FeTP.Size = UDim2.new(0, 105, 0, 50)
+FeTP.Font = Enum.Font.SourceSansBold
+FeTP.Text = "FE TP"
+FeTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeTP.TextScaled = true
+FeTP.TextSize = 14.000
+FeTP.TextWrapped = true
+FeTP.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EnvyScripts/V3rmillionScripts/master/FE%20Tp%20Script.txt"))();
+end)
+
+FEKill.Name = "FE Kill"
+FEKill.Parent = MainHaxGui
+FEKill.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+FEKill.Position = UDim2.new(0.403508782, 0, 0.449579835, 0)
+FEKill.Size = UDim2.new(0, 105, 0, 50)
+FEKill.Font = Enum.Font.SourceSansBold
+FEKill.Text = "FE Kill"
+FEKill.TextColor3 = Color3.fromRGB(0, 0, 0)
+FEKill.TextScaled = true
+FEKill.TextSize = 14.000
+FEKill.TextWrapped = true
+FEKill.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EnvyScripts/V3rmillionScripts/master/FE%20Kill%20Script.txt"))();
+end)
+
+Admin.Name = "Admin"
+Admin.Parent = MainHaxGui
+Admin.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+Admin.Position = UDim2.new(0.704260647, 0, 0.163865536, 0)
+Admin.Size = UDim2.new(0, 105, 0, 50)
+Admin.Font = Enum.Font.SourceSansBold
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextScaled = true
+Admin.TextSize = 14.000
+Admin.TextWrapped = true
+Admin.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EnvyScripts/V3rmillionScripts/master/ThisAdminForTM.lua"))();
+end)
+
+TextLabel.Parent = MainHaxGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.834586442, 0, 0.886554599, 0)
+TextLabel.Size = UDim2.new(0, 66, 0, 27)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "SadReD"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Reflex.Name = "Reflex"
+Reflex.Parent = MainHaxGui
+Reflex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reflex.BackgroundTransparency = 1.000
+Reflex.Position = UDim2.new(0, 0, 0.886554599, 0)
+Reflex.Size = UDim2.new(0, 66, 0, 27)
+Reflex.Font = Enum.Font.SourceSans
+Reflex.Text = "Reflex"
+Reflex.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reflex.TextScaled = true
+Reflex.TextSize = 14.000
+Reflex.TextWrapped = true
