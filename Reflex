@@ -1,0 +1,146 @@
+-- Made By:SadReD/Noobie
+
+
+local MainGui = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local Bar1 = Instance.new("Frame")
+local Tittle = Instance.new("TextLabel")
+local Login = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local MainHaxGui = Instance.new("Frame")
+local SazaHub = Instance.new("TextButton")
+local BlackTrap = Instance.new("TextButton")
+local Closed = Instance.new("TextButton")
+
+
+
+MainGui.Name = "MainGui"
+MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = MainGui
+LoginFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LoginFrame.BorderSizePixel = 0
+LoginFrame.Position = UDim2.new(0.42153284, 0, 0.262541831, 0)
+LoginFrame.Size = UDim2.new(0, 235, 0, 271)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
+
+Bar1.Name = "Bar1"
+Bar1.Parent = LoginFrame
+Bar1.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+Bar1.BorderSizePixel = 0
+Bar1.Size = UDim2.new(0, 235, 0, 46)
+
+Tittle.Name = "Tittle"
+Tittle.Parent = Bar1
+Tittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tittle.BackgroundTransparency = 1.000
+Tittle.Position = UDim2.new(0.0723404288, 0, 0.128260881, 0)
+Tittle.Size = UDim2.new(0, 200, 0, 34)
+Tittle.Font = Enum.Font.SourceSansBold
+Tittle.Text = "Login Screen"
+Tittle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tittle.TextScaled = true
+Tittle.TextSize = 14.000
+Tittle.TextWrapped = true
+
+Login.Name = "Login"
+Login.Parent = LoginFrame
+Login.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Login.Position = UDim2.new(0.144680858, 0, 0.258302569, 0)
+Login.Size = UDim2.new(0, 168, 0, 50)
+Login.ZIndex = 0
+Login.Font = Enum.Font.SourceSansBold
+Login.Text = "Username"
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextScaled = true
+Login.TextSize = 14.000
+Login.TextWrapped = true
+
+Password.Name = "Password"
+Password.Parent = LoginFrame
+Password.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Password.Position = UDim2.new(0.144680858, 0, 0.55350554, 0)
+Password.Size = UDim2.new(0, 168, 0, 50)
+Password.Font = Enum.Font.SourceSansBold
+Password.Text = "Password"
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = LoginFrame
+LoginButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+LoginButton.Position = UDim2.new(0.225531906, 0, 0.808118045, 0)
+LoginButton.Size = UDim2.new(0, 127, 0, 35)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginButton.TextScaled = true
+LoginButton.TextSize = 14.000
+LoginButton.TextWrapped = true
+LoginButton.MouseButton1Down:Connect(function()
+	if Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
+		LoginFrame.Visible = false
+		MainHaxGui.Visible = true
+	end
+end)
+
+MainHaxGui.Name = "MainHaxGui"
+MainHaxGui.Parent = MainGui
+MainHaxGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainHaxGui.Position = UDim2.new(0.359489024, 0, 0.279264212, 0)
+MainHaxGui.Size = UDim2.new(0, 399, 0, 238)
+MainHaxGui.Visible = false
+MainHaxGui.Active = true
+MainHaxGui.Draggable = true
+
+SazaHub.Name = "SazaHub"
+SazaHub.Parent = MainHaxGui
+SazaHub.BackgroundColor3 = Color3.fromRGB(0, 0, 163)
+SazaHub.Position = UDim2.new(0.0375939831, 0, 0.163865551, 0)
+SazaHub.Size = UDim2.new(0, 99, 0, 50)
+SazaHub.Font = Enum.Font.SourceSans
+SazaHub.Text = "SazaHub"
+SazaHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+SazaHub.TextScaled = true
+SazaHub.TextSize = 14.000
+SazaHub.TextWrapped = true
+SazaHub.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet"https://www.scriptbloxian.com/raw/SAZA-HUB_496")()
+end)
+
+BlackTrap.Name = "BlackTrap"
+BlackTrap.Parent = MainHaxGui
+BlackTrap.BackgroundColor3 = Color3.fromRGB(0, 0, 163)
+BlackTrap.Position = UDim2.new(0.403508782, 0, 0.163865551, 0)
+BlackTrap.Size = UDim2.new(0, 99, 0, 50)
+BlackTrap.Font = Enum.Font.SourceSans
+BlackTrap.Text = "BlackTrap"
+BlackTrap.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlackTrap.TextScaled = true
+BlackTrap.TextSize = 14.000
+BlackTrap.TextWrapped = true
+BlackTrap.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
+	game:GetObjects("rbxassetid://175460237")[1].Parent = game.Players.LocalPlayer.PlayerGui
+end)
+
+Closed.Name = "Closed"
+Closed.Parent = MainHaxGui
+Closed.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+Closed.Position = UDim2.new(0.862155378, 0, 0, 0)
+Closed.Size = UDim2.new(0, 55, 0, 50)
+Closed.Font = Enum.Font.SourceSans
+Closed.Text = "X"
+Closed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Closed.TextScaled = true
+Closed.TextSize = 14.000
+Closed.TextWrapped = true
+Closed.MouseButton1Down:Connect(function()
+	Closed.Visible = false
+end)
