@@ -172,13 +172,13 @@ FEKill.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
 FEKill.Position = UDim2.new(0.403508782, 0, 0.449579835, 0)
 FEKill.Size = UDim2.new(0, 105, 0, 50)
 FEKill.Font = Enum.Font.SourceSansBold
-FEKill.Text = "FE Kill"
+FEKill.Text = "Remote Spy"
 FEKill.TextColor3 = Color3.fromRGB(0, 0, 0)
 FEKill.TextScaled = true
 FEKill.TextSize = 14.000
 FEKill.TextWrapped = true
 FEKill.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EnvyScripts/V3rmillionScripts/master/FE%20Kill%20Script.txt"))();
+	loadstring(game:HttpGet("https://pastebin.com/raw/BFdPkjDt"))();
 end)
 
 Admin.Name = "Admin"
@@ -220,3 +220,4 @@ Reflex.TextColor3 = Color3.fromRGB(0, 0, 0)
 Reflex.TextScaled = true
 Reflex.TextSize = 14.000
 Reflex.TextWrapped = true
+
