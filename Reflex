@@ -193,7 +193,7 @@ Admin.TextScaled = true
 Admin.TextSize = 14.000
 Admin.TextWrapped = true
 Admin.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EnvyScripts/V3rmillionScripts/master/ThisAdminForTM.lua"))();
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
 end)
 
 TextLabel.Parent = MainHaxGui
