@@ -1,7 +1,5 @@
 -- Made By:SadReD/Reflex
 
-local Players = game:GetService("Players")
-local localPlayer = Players.LocalPlayer
 local MainGui = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
 local Bar1 = Instance.new("Frame")
@@ -93,7 +91,8 @@ LoginButton.MouseButton1Down:Connect(function()
 		LoginFrame.Visible = false
 		MainHaxGui.Visible = true
 		if not Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
-			localPlayer:Kick("Wrong Username Or Password Join In Discord Server To Get User and Password")			
+			local player = game.Players.LocalPlayer
+			player:Kick("Wrong Password")
 		end
 	end
 end)
