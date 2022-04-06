@@ -90,9 +90,8 @@ LoginButton.MouseButton1Down:Connect(function()
 	if Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
 		LoginFrame.Visible = false
 		MainHaxGui.Visible = true
-                local plr = game.Players.LocalPlayer
-		print("Has Granted"..plr.Name."Welcome")
-		end
+
+	       end
 	end
 end)
 
