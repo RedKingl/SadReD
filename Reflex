@@ -90,9 +90,8 @@ LoginButton.MouseButton1Down:Connect(function()
 	if Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
 		LoginFrame.Visible = false
 		MainHaxGui.Visible = true
-		if not Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
-			print("not granted")
-
+                local plr = game.Players.LocalPlayer
+		print("Has Granted"..plr.Name."Welcome")
 		end
 	end
 end)
@@ -166,13 +165,13 @@ FeTP.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
 FeTP.Position = UDim2.new(0.0225563906, 0, 0.449579835, 0)
 FeTP.Size = UDim2.new(0, 105, 0, 50)
 FeTP.Font = Enum.Font.SourceSansBold
-FeTP.Text = "FE TP"
+FeTP.Text = "Brookhaven FE"
 FeTP.TextColor3 = Color3.fromRGB(0, 0, 0)
 FeTP.TextScaled = true
 FeTP.TextSize = 14.000
 FeTP.TextWrapped = true
 FeTP.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EnvyScripts/V3rmillionScripts/master/FE%20Tp%20Script.txt"))();
+	loadstring(game:HttpGet("https://pastebin.com/raw/U2c5Zsen", true))()
 end)
 
 FEKill.Name = "FE Kill"
