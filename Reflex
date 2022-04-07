@@ -169,7 +169,10 @@ UICorner_7.CornerRadius = UDim.new(0, 15)
 UICorner_7.Parent = MainFrame
 MainFrame.Active = true
 MainFrame.Draggable = true
-
+while true do
+	print(plr.Name.."Thx For Using This Script")
+	print("Discord Nothing.#8284")
+end
 
 Title.Name = "Title"
 Title.Parent = MainFrame
@@ -217,7 +220,13 @@ ChampionX.TextScaled = true
 ChampionX.TextSize = 14.000
 ChampionX.TextWrapped = true
 ChampionX.MouseButton1Down:Connect(function()
-	ChampionXFrame.Visible = true
+	ChampionXFrame:TweenPosition(
+		UDim2.new(0.328, 0, 0.194, 0)
+		"Out",
+		"Quad",
+		.5,
+		false
+		)
 end)
 
 UICorner_10.CornerRadius = UDim.new(0, 15)
@@ -253,7 +262,7 @@ RemoteSpy.TextScaled = true
 RemoteSpy.TextSize = 14.000
 RemoteSpy.TextWrapped = true
 RemoteSpy.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CoochieSlayer6372/SimpleSpyFixed/main/badscript2.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CoochiesSlayer6372/SimpleSpyFixed/main/badscript2.lua"))()
 end)
 
 UICorner_12.CornerRadius = UDim.new(0, 15)
