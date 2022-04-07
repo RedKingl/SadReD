@@ -169,10 +169,6 @@ UICorner_7.CornerRadius = UDim.new(0, 15)
 UICorner_7.Parent = MainFrame
 MainFrame.Active = true
 MainFrame.Draggable = true
-while true do
-	print(plr.Name.."Thx For Using This Script")
-	print("Discord Nothing.#8284")
-end
 
 Title.Name = "Title"
 Title.Parent = MainFrame
