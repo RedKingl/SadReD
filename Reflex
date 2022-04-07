@@ -1,230 +1,314 @@
--- Made By:SadReD/Reflex
+--Made By SadReD
+print("Discord Nothing.#8284")
+local plr = game.Players.LocalPlayer
+local passes = plr:WaitForChild("Passes")
+local autoRebirth = passes:WaitForChild("AutoRebirth")
+local autoClicker = passes:WaitForChild("AutoClicker")
+local magicEgg = passes:WaitForChild("MagicEggs")
+local fastHatching = passes:WaitForChild("FasterEggOpen")
+local MainGUI = Instance.new("ScreenGui")
+local ChampionXFrame = Instance.new("Frame")
+local AutoClickerGamepass = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local AutoRebirth = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local TitleR = Instance.new("TextLabel")
+local FastHatching = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local MagicEgg = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Exit = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local ExitButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local ChampionX = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local JailBreak = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local RemoteSpy = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local FleeTheFacility = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local WorkAtPizza = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local BreakingPoint = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
 
-local MainGui = Instance.new("ScreenGui")
-local LoginFrame = Instance.new("Frame")
-local Bar1 = Instance.new("Frame")
-local Tittle = Instance.new("TextLabel")
-local Login = Instance.new("TextBox")
-local Password = Instance.new("TextBox")
-local LoginButton = Instance.new("TextButton")
-local MainHaxGui = Instance.new("Frame")
-local SazaHub = Instance.new("TextButton")
-local BlackTrap = Instance.new("TextButton")
-local Closed = Instance.new("TextButton")
-local FeTP = Instance.new("TextButton")
-local FEKill = Instance.new("TextButton")
-local Admin = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
-local Reflex = Instance.new("TextLabel")
 
 
-MainGui.Name = "MainGui"
-MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainGUI.Name = "MainGUI"
+MainGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-LoginFrame.Name = "LoginFrame"
-LoginFrame.Parent = MainGui
-LoginFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-LoginFrame.BorderSizePixel = 0
-LoginFrame.Position = UDim2.new(0.42153284, 0, 0.262541831, 0)
-LoginFrame.Size = UDim2.new(0, 235, 0, 271)
-LoginFrame.Active = true
-LoginFrame.Draggable = true
+ChampionXFrame.Name = "ChampionXFrame"
+ChampionXFrame.Parent = MainGUI
+ChampionXFrame.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+ChampionXFrame.Position = UDim2.new(0.327720195, 0, 0.193979934, 0)
+ChampionXFrame.Size = UDim2.new(0, 265, 0, 367)
+ChampionXFrame.Visible = false
+ChampionXFrame.Active = true
+ChampionXFrame.Draggable = true
 
-Bar1.Name = "Bar1"
-Bar1.Parent = LoginFrame
-Bar1.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-Bar1.BorderSizePixel = 0
-Bar1.Size = UDim2.new(0, 235, 0, 46)
-
-Tittle.Name = "Tittle"
-Tittle.Parent = Bar1
-Tittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tittle.BackgroundTransparency = 1.000
-Tittle.Position = UDim2.new(0.0723404288, 0, 0.128260881, 0)
-Tittle.Size = UDim2.new(0, 200, 0, 34)
-Tittle.Font = Enum.Font.SourceSansBold
-Tittle.Text = "Login Screen"
-Tittle.TextColor3 = Color3.fromRGB(0, 0, 0)
-Tittle.TextScaled = true
-Tittle.TextSize = 14.000
-Tittle.TextWrapped = true
-
-Login.Name = "Login"
-Login.Parent = LoginFrame
-Login.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-Login.Position = UDim2.new(0.144680858, 0, 0.258302569, 0)
-Login.Size = UDim2.new(0, 168, 0, 50)
-Login.ZIndex = 0
-Login.Font = Enum.Font.SourceSansBold
-Login.Text = "Username"
-Login.TextColor3 = Color3.fromRGB(0, 0, 0)
-Login.TextScaled = true
-Login.TextSize = 14.000
-Login.TextWrapped = true
-
-Password.Name = "Password"
-Password.Parent = LoginFrame
-Password.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-Password.Position = UDim2.new(0.144680858, 0, 0.55350554, 0)
-Password.Size = UDim2.new(0, 168, 0, 50)
-Password.Font = Enum.Font.SourceSansBold
-Password.Text = "Password"
-Password.TextColor3 = Color3.fromRGB(0, 0, 0)
-Password.TextScaled = true
-Password.TextSize = 14.000
-Password.TextWrapped = true
-
-LoginButton.Name = "LoginButton"
-LoginButton.Parent = LoginFrame
-LoginButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-LoginButton.Position = UDim2.new(0.225531906, 0, 0.808118045, 0)
-LoginButton.Size = UDim2.new(0, 127, 0, 35)
-LoginButton.Font = Enum.Font.SourceSans
-LoginButton.Text = "Login"
-LoginButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-LoginButton.TextScaled = true
-LoginButton.TextSize = 14.000
-LoginButton.TextWrapped = true
-LoginButton.MouseButton1Down:Connect(function()
-	if Login.Text == "Reflex2323" and Password.Text == "DontBeShy" then
-		LoginFrame.Visible = false
-		MainHaxGui.Visible = true
-
-	       end
-	end
+AutoClickerGamepass.Name = "AutoClickerGamepass"
+AutoClickerGamepass.Parent = ChampionXFrame
+AutoClickerGamepass.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+AutoClickerGamepass.BorderSizePixel = 0
+AutoClickerGamepass.Position = UDim2.new(0.124528304, 0, 0.817438662, 0)
+AutoClickerGamepass.Size = UDim2.new(0, 200, 0, 50)
+AutoClickerGamepass.Font = Enum.Font.SourceSansBold
+AutoClickerGamepass.Text = "AutoClicker"
+AutoClickerGamepass.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoClickerGamepass.TextScaled = true
+AutoClickerGamepass.TextSize = 14.000
+AutoClickerGamepass.TextWrapped = true
+AutoClickerGamepass.MouseButton1Down:Connect(function()
+	autoClicker.Value = true
 end)
 
-MainHaxGui.Name = "MainHaxGui"
-MainHaxGui.Parent = MainGui
-MainHaxGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-MainHaxGui.Position = UDim2.new(0.359489024, 0, 0.279264212, 0)
-MainHaxGui.Size = UDim2.new(0, 399, 0, 238)
-MainHaxGui.Visible = false
-MainHaxGui.Active = true
-MainHaxGui.Draggable = true
+UICorner.Parent = AutoClickerGamepass
 
-SazaHub.Name = "SazaHub"
-SazaHub.Parent = MainHaxGui
-SazaHub.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-SazaHub.Position = UDim2.new(0.0375939831, 0, 0.163865551, 0)
-SazaHub.Size = UDim2.new(0, 99, 0, 50)
-SazaHub.Font = Enum.Font.SourceSansBold
-SazaHub.Text = "SazaHub"
-SazaHub.TextColor3 = Color3.fromRGB(0, 0, 0)
-SazaHub.TextScaled = true
-SazaHub.TextSize = 14.000
-SazaHub.TextWrapped = true
-SazaHub.MouseButton1Down:Connect(function()
-	print("The Script Not Working Patched")
-while true do
 
-wait()
-
-local part = Instance.new("Part")
-part.Name = "try part"
-part.brickcolor = brickcolor.new("Red")
-part.Parent = game.Workspace
-end
+AutoRebirth.Name = "AutoRebirth"
+AutoRebirth.Parent = ChampionXFrame
+AutoRebirth.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+AutoRebirth.BorderSizePixel = 0
+AutoRebirth.Position = UDim2.new(0.120754719, 0, 0.651226103, 0)
+AutoRebirth.Size = UDim2.new(0, 200, 0, 50)
+AutoRebirth.Font = Enum.Font.SourceSansBold
+AutoRebirth.Text = "AutoRebirth"
+AutoRebirth.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoRebirth.TextScaled = true
+AutoRebirth.TextSize = 14.000
+AutoRebirth.TextWrapped = true
+AutoRebirth.MouseButton1Down:Connect(function()
+	autoRebirth.Value = true
 end)
 
-BlackTrap.Name = "BlackTrap"
-BlackTrap.Parent = MainHaxGui
-BlackTrap.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-BlackTrap.Position = UDim2.new(0.403508782, 0, 0.163865551, 0)
-BlackTrap.Size = UDim2.new(0, 99, 0, 50)
-BlackTrap.Font = Enum.Font.SourceSansBold
-BlackTrap.Text = "BlackTrap"
-BlackTrap.TextColor3 = Color3.fromRGB(0, 0, 0)
-BlackTrap.TextScaled = true
-BlackTrap.TextSize = 14.000
-BlackTrap.TextWrapped = true
-BlackTrap.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
+UICorner_2.Parent = AutoRebirth
+
+UICorner_3.Parent = ChampionXFrame
+
+TitleR.Name = "TitleR"
+TitleR.Parent = ChampionXFrame
+TitleR.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TitleR.BorderSizePixel = 0
+TitleR.Position = UDim2.new(0.120754719, 0, 0, 0)
+TitleR.Size = UDim2.new(0, 200, 0, 50)
+TitleR.Font = Enum.Font.SourceSans
+TitleR.Text = "ChampionX"
+TitleR.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleR.TextScaled = true
+TitleR.TextSize = 14.000
+TitleR.TextWrapped = true
+
+FastHatching.Name = "FastHatching"
+FastHatching.Parent = ChampionXFrame
+FastHatching.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+FastHatching.BorderSizePixel = 0
+FastHatching.Position = UDim2.new(0.124528304, 0, 0.476839185, 0)
+FastHatching.Size = UDim2.new(0, 200, 0, 50)
+FastHatching.Font = Enum.Font.SourceSansBold
+FastHatching.Text = "FastHatching"
+FastHatching.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastHatching.TextScaled = true
+FastHatching.TextSize = 14.000
+FastHatching.TextWrapped = true
+FastHatching.MouseButton1Down:Connect(function()
+	fastHatching.Value = true
 end)
 
-Closed.Name = "Closed"
-Closed.Parent = MainHaxGui
-Closed.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-Closed.Position = UDim2.new(0.887218058, 0, 0, 0)
-Closed.Size = UDim2.new(0, 45, 0, 32)
-Closed.Font = Enum.Font.SourceSans
-Closed.Text = "X"
-Closed.TextColor3 = Color3.fromRGB(0, 0, 0)
-Closed.TextScaled = true
-Closed.TextSize = 14.000
-Closed.TextWrapped = true
-Closed.MouseButton1Down:Connect(function()
-	MainHaxGui.Visible = false
+UICorner_4.Parent = FastHatching
+
+MagicEgg.Name = "MagicEgg"
+MagicEgg.Parent = ChampionXFrame
+MagicEgg.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+MagicEgg.BorderSizePixel = 0
+MagicEgg.Position = UDim2.new(0.120754719, 0, 0.313351452, 0)
+MagicEgg.Size = UDim2.new(0, 200, 0, 50)
+MagicEgg.Font = Enum.Font.SourceSansBold
+MagicEgg.Text = "MagicEgg"
+MagicEgg.TextColor3 = Color3.fromRGB(0, 0, 0)
+MagicEgg.TextScaled = true
+MagicEgg.TextSize = 14.000
+MagicEgg.TextWrapped = true
+MagicEgg.MouseButton1Down:Connect(function()
+	magicEgg.Value = true
 end)
 
-FeTP.Name = "Fe TP"
-FeTP.Parent = MainHaxGui
-FeTP.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-FeTP.Position = UDim2.new(0.0225563906, 0, 0.449579835, 0)
-FeTP.Size = UDim2.new(0, 105, 0, 50)
-FeTP.Font = Enum.Font.SourceSansBold
-FeTP.Text = "Brookhaven FE"
-FeTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-FeTP.TextScaled = true
-FeTP.TextSize = 14.000
-FeTP.TextWrapped = true
-FeTP.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/U2c5Zsen", true))()
+UICorner_5.Parent = MagicEgg
+
+Exit.Name = "Exit"
+Exit.Parent = ChampionXFrame
+Exit.BackgroundColor3 = Color3.fromRGB(216, 0, 0)
+Exit.Position = UDim2.new(0.875471711, 0, -0.0326975472, 0)
+Exit.Size = UDim2.new(0, 69, 0, 56)
+Exit.Font = Enum.Font.SourceSansBold
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Down:Connect(function()
+	ChampionXFrame.Visible = false
 end)
 
-FEKill.Name = "FE Kill"
-FEKill.Parent = MainHaxGui
-FEKill.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-FEKill.Position = UDim2.new(0.403508782, 0, 0.449579835, 0)
-FEKill.Size = UDim2.new(0, 105, 0, 50)
-FEKill.Font = Enum.Font.SourceSansBold
-FEKill.Text = "Remote Spy"
-FEKill.TextColor3 = Color3.fromRGB(0, 0, 0)
-FEKill.TextScaled = true
-FEKill.TextSize = 14.000
-FEKill.TextWrapped = true
-FEKill.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/BFdPkjDt"))();
+UICorner_6.Parent = Exit
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = MainGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainFrame.Position = UDim2.new(0.19948186, 0, 0.23244147, 0)
+MainFrame.Size = UDim2.new(0, 447, 0, 312)
+
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = MainFrame
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.275167763, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "RedFlexHax"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 15)
+UICorner_8.Parent = Title
+
+ExitButton.Name = "ExitButton"
+ExitButton.Parent = MainFrame
+ExitButton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ExitButton.Position = UDim2.new(0.90380311, 0, -0.0320512839, 0)
+ExitButton.Size = UDim2.new(0, 63, 0, 51)
+ExitButton.Font = Enum.Font.SourceSans
+ExitButton.Text = "X"
+ExitButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExitButton.TextScaled = true
+ExitButton.TextSize = 14.000
+ExitButton.TextWrapped = true
+ExitButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = false
 end)
 
-Admin.Name = "Admin"
-Admin.Parent = MainHaxGui
-Admin.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-Admin.Position = UDim2.new(0.704260647, 0, 0.163865536, 0)
-Admin.Size = UDim2.new(0, 105, 0, 50)
-Admin.Font = Enum.Font.SourceSansBold
-Admin.Text = "Admin"
-Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Admin.TextScaled = true
-Admin.TextSize = 14.000
-Admin.TextWrapped = true
-Admin.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+UICorner_9.CornerRadius = UDim.new(0, 15)
+UICorner_9.Parent = ExitButton
+
+ChampionX.Name = "ChampionX"
+ChampionX.Parent = MainFrame
+ChampionX.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+ChampionX.Position = UDim2.new(0.0492170006, 0, 0.160256416, 0)
+ChampionX.Size = UDim2.new(0, 84, 0, 72)
+ChampionX.Font = Enum.Font.SourceSansBold
+ChampionX.Text = "Champion X"
+ChampionX.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChampionX.TextScaled = true
+ChampionX.TextSize = 14.000
+ChampionX.TextWrapped = true
+ChampionX.MouseButton1Down:Connect(function()
+	ChampionXFrame.Visible = true
 end)
 
-TextLabel.Parent = MainHaxGui
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.834586442, 0, 0.886554599, 0)
-TextLabel.Size = UDim2.new(0, 66, 0, 27)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "SadReD"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+UICorner_10.CornerRadius = UDim.new(0, 15)
+UICorner_10.Parent = ChampionX
 
-Reflex.Name = "Reflex"
-Reflex.Parent = MainHaxGui
-Reflex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Reflex.BackgroundTransparency = 1.000
-Reflex.Position = UDim2.new(0, 0, 0.886554599, 0)
-Reflex.Size = UDim2.new(0, 66, 0, 27)
-Reflex.Font = Enum.Font.SourceSansBold
-Reflex.Text = "Reflex"
-Reflex.TextColor3 = Color3.fromRGB(20, 20, 20)
-Reflex.TextScaled = true
-Reflex.TextSize = 14.000
-Reflex.TextWrapped = true
+JailBreak.Name = "JailBreak"
+JailBreak.Parent = MainFrame
+JailBreak.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+JailBreak.Position = UDim2.new(0.275167793, 0, 0.160256416, 0)
+JailBreak.Size = UDim2.new(0, 84, 0, 72)
+JailBreak.Font = Enum.Font.SourceSansBold
+JailBreak.Text = "BrookHaven"
+JailBreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+JailBreak.TextScaled = true
+JailBreak.TextSize = 14.000
+JailBreak.TextWrapped = true
+JailBreak.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
 
+UICorner_11.CornerRadius = UDim.new(0, 15)
+UICorner_11.Parent = JailBreak
+
+RemoteSpy.Name = "RemoteSpy"
+RemoteSpy.Parent = MainFrame
+RemoteSpy.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+RemoteSpy.Position = UDim2.new(0.510067105, 0, 0.160256416, 0)
+RemoteSpy.Size = UDim2.new(0, 84, 0, 72)
+RemoteSpy.Font = Enum.Font.SourceSansBold
+RemoteSpy.Text = "RemoteSpy"
+RemoteSpy.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoteSpy.TextScaled = true
+RemoteSpy.TextSize = 14.000
+RemoteSpy.TextWrapped = true
+RemoteSpy.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CoochiesSlayer6372/SimpleSpyFixed/main/badscript2.lua"))()
+end)
+
+UICorner_12.CornerRadius = UDim.new(0, 15)
+UICorner_12.Parent = RemoteSpy
+
+FleeTheFacility.Name = "FleeTheFacility"
+FleeTheFacility.Parent = MainFrame
+FleeTheFacility.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+FleeTheFacility.Position = UDim2.new(0.769574881, 0, 0.160256416, 0)
+FleeTheFacility.Size = UDim2.new(0, 84, 0, 72)
+FleeTheFacility.Font = Enum.Font.SourceSansBold
+FleeTheFacility.Text = "FleeTheFacility"
+FleeTheFacility.TextColor3 = Color3.fromRGB(0, 0, 0)
+FleeTheFacility.TextScaled = true
+FleeTheFacility.TextSize = 14.000
+FleeTheFacility.TextWrapped = true
+FleeTheFacility.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 15)
+UICorner_13.Parent = FleeTheFacility
+
+WorkAtPizza.Name = "WorkAtPizza"
+WorkAtPizza.Parent = MainFrame
+WorkAtPizza.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+WorkAtPizza.Position = UDim2.new(0.0492169261, 0, 0.432692319, 0)
+WorkAtPizza.Size = UDim2.new(0, 84, 0, 72)
+WorkAtPizza.Font = Enum.Font.SourceSansBold
+WorkAtPizza.Text = "WorkAtPizza"
+WorkAtPizza.TextColor3 = Color3.fromRGB(0, 0, 0)
+WorkAtPizza.TextScaled = true
+WorkAtPizza.TextSize = 14.000
+WorkAtPizza.TextWrapped = true
+WorkAtPizza.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/bb2f1182a224999682a2d1a87aa8517a/raw/66c7791224be0434b23938ca26244238649d0143/ameicaa", true))()
+end)
+
+UICorner_14.CornerRadius = UDim.new(0, 15)
+UICorner_14.Parent = WorkAtPizza
+
+BreakingPoint.Name = "BreakingPoint"
+BreakingPoint.Parent = MainFrame
+BreakingPoint.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+BreakingPoint.Position = UDim2.new(0.275167704, 0, 0.442307711, 0)
+BreakingPoint.Size = UDim2.new(0, 84, 0, 72)
+BreakingPoint.Font = Enum.Font.SourceSansBold
+BreakingPoint.Text = "BreakingPoint"
+BreakingPoint.TextColor3 = Color3.fromRGB(0, 0, 0)
+BreakingPoint.TextScaled = true
+BreakingPoint.TextSize = 14.000
+BreakingPoint.TextWrapped = true
+BreakingPoint.MouseButton1Down:Connect(function()
+	loadstring(game:GetObjects("rbxassetid://7228968882")[1].Source)()
+end)
+
+UICorner_15.CornerRadius = UDim.new(0, 15)
+UICorner_15.Parent = BreakingPoint
