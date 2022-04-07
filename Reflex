@@ -216,13 +216,7 @@ ChampionX.TextScaled = true
 ChampionX.TextSize = 14.000
 ChampionX.TextWrapped = true
 ChampionX.MouseButton1Down:Connect(function()
-	ChampionXFrame:TweenPosition(
-		UDim2.new(0.328, 0, 0.194, 0)
-		"Out",
-		"Quad",
-		.5,
-		false
-		)
+	ChampionXFrame
 end)
 
 UICorner_10.CornerRadius = UDim.new(0, 15)
